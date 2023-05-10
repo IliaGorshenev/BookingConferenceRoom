@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  min-height: 100%;
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 400;
+  color: #000000;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+form {
+  width: 550px;
+  padding: 50px;
+  background: #ccc;
+  position: fixed; top: 50%; left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #cccccc;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+
+  border: none;
+  border-radius: 5px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+output,
+textarea {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 2px 5px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  resize: none;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+button {
+  background-color: #0077FF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #003cff;
+  transition: all 0.6s;
+}
+
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.form__part--two-sections {
+  grid-column: 1 / 3;
+}
+
+                            
