@@ -16,17 +16,15 @@ if (window.localStorage) {
 
 const form = document.querySelector('.form');
 const button = document.querySelector('.submit-button');
-
      
 form.addEventListener('submit', (evt) => {
     evt.preventDefault();
     const formData = new FormData(form);
-
     var object = {};
+
     formData.forEach(function(value, key){
         object[key] = value;
     });
     var json = JSON.stringify(object);
-    // console.log(Array.from(formData.entries()))
     console.log(json)
 })
