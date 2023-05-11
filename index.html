@@ -76,13 +76,20 @@
     </div>
     <div class="form__part">
       <label>
-        <label for="tower">Переговорная</label>
+        <label for="tower">Дата</label>
         <input type="date" name="date"/>
       </label>
     </div>
+    <div class="form__part">
+      <label>
+        <label for="tower">Время</label>
+          <input type="time" name="time"
+        min="09:00" max="18:00" required>
+        </label>
+     </div>
     <div class="form__part form__part--two-sections">
       <label for="review">Дополнительная информация:</label> 
-      <textarea name="review" id="review" rows="5"></textarea>
+      <textarea name="review" placeholder="комментарий" id="review" rows="5"></textarea>
     </div>
     </fieldset>
     <fieldset>
